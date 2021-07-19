@@ -13,3 +13,53 @@
 body {
   font-family: 'Public Sans', sans-serif;
 }
+
+.overOpen {
+  opacity: 0.7;
+  background: linear-gradient(180deg, rgba(45,49,77,1) 0%, rgba(255,255,255,1) 100%);
+
+  animation: appear 200ms ease-in-out 1 forwards;
+}
+
+@keyframes appear {
+  0% {opacity: 0;};
+  100%{opacity: 0.7;}
+}
+
+.overClosed {
+  opacity: 0;
+  background: linear-gradient(180deg, rgba(45,49,77,1) 0%, rgba(255,255,255,1) 100%);
+  transform: translateY(-1000px);
+  transition-delay: 200ms;
+
+  animation: overlay 200ms ease-in-out 1 forwards;
+}
+
+@keyframes overlay {
+  0% {opacity: 0.7;}
+  100%{opacity: 0;}
+}
+
+.open {
+  opacity: 1;
+
+  animation: appearMenu 200ms ease-in-out 1 forwards;
+}
+
+@keyframes appearMenu {
+  0% {opacity: 0;};
+  100%{opacity: 1;}
+}
+
+.closed {
+  opacity: 0;
+  transform: translateY(-1000px);
+  transition-delay: 200ms;
+
+  animation: closedMenu 200ms ease-in-out 1 forwards;
+}
+
+@keyframes closedMenu {
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
