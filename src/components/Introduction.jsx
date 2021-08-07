@@ -67,7 +67,7 @@ const IntroSect = styled.section`
   }
 
   @media screen and (max-width: 480px) {
-    height: 90.625rem;
+    height: 96.875rem;
     padding: 4.375rem 1.825rem 0 1.825rem;
   }
 
@@ -108,13 +108,13 @@ const IntroPara = styled.p`
 
 const IntroList = styled.div`
   width: 100%;
-  height: 265px;
   display: grid;
-  grid-template-columns: repeat(4, 265px);
+  grid-template-columns: repeat(4, 255px);
   grid-template-rows: 265px;
+  gap: 30px;
 
   @media screen and (max-width: 1200px) {
-    grid-template-columns: repeat(3, 265px);
+    grid-template-columns: repeat(3, 255px);
     grid-template-rows: repeat(2, 265px);
   }
 
@@ -126,8 +126,6 @@ const IntroList = styled.div`
 `;
 
 const ListItem = styled.div`
-  padding-right: 10px;
-
   @media screen and (max-width: 1200px) {
     &:last-child {
       grid-column: 2;
