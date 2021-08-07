@@ -61,10 +61,16 @@ const IntroSect = styled.section`
   padding-left: 10.3125rem;
   background: hsl(220, 16%, 96%);
 
+  @media screen and (max-width: 1200px) {
+    padding-left: 5rem;
+    height: 56.25rem;
+  }
+
   @media screen and (max-width: 480px) {
-    height: 1450px;
+    height: 90.625rem;
     padding: 4.375rem 1.825rem 0 1.825rem;
   }
+
 `;
 
 const IntroWrap = styled.div`
@@ -107,21 +113,37 @@ const IntroList = styled.div`
   grid-template-columns: repeat(4, 265px);
   grid-template-rows: 265px;
 
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(3, 265px);
+    grid-template-rows: repeat(2, 265px);
+  }
+
   @media screen and (max-width: 480px) {
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 265px);
   }
+
 `;
 
 const ListItem = styled.div`
   padding-right: 10px;
+
+  @media screen and (max-width: 1200px) {
+    &:last-child {
+      grid-column: 2;
+    }
+  }
 
   @media screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
+    &:last-child {
+      grid-column: 1;
+    }
   }
+
 `;
 
 const IntroImgs = styled.img`
