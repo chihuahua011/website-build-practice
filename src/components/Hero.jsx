@@ -40,6 +40,7 @@ const HeroSect = styled.section`
       padding-left: 5rem;
   }
   @media screen and (max-width: 480px) {
+    margin-top: 4.0625rem;
     padding: 20.625rem 1.825rem 0 1.825rem;
   }
 `;
@@ -126,6 +127,7 @@ const MockupImg = styled.img`
   height: 777px;
   object-fit: none;
   object-position: 0 100%;
+  z-index: 1;
 
   @media screen and (max-width: 1200px) {
     width: 500px;

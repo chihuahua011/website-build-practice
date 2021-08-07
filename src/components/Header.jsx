@@ -85,9 +85,11 @@ const HeaderCont = styled.div`
   z-index: 11;
 
   @media screen and (max-width: 480px) {
+    position: fixed;
     height: 4.0625rem;
     padding: 0 1.5625rem;
     grid-template-columns: 140px auto;
+    background-color: hsl(0, 0%, 100%);
   }
 
   & img {
@@ -180,7 +182,7 @@ const HamBtn = styled.button`
 
 const HamMenu = styled.div`
   display: none;
-  position: absolute;
+  position: fixed;
   width: 327px;
   height: 300px;
   margin-top: 89px;
@@ -208,7 +210,7 @@ const HamMenu = styled.div`
 `;
 
 const Overlay = styled.div`
-  position: absolute;
+  position: fixed;
   top: 65px;
   display: none;
   height: calc(100vh - 65px);
