@@ -17,16 +17,19 @@ const Header = () => {
   useEffect(() => {
     const overlay = document.querySelector("#overlay");
     const mobMenu = document.querySelector("#mobMenu");
+    const body = document.querySelector("body");
 
     if (toggled === true) {
       overlay.classList.add("overOpen");
       overlay.classList.remove("overClosed");
+      body.classList.add("disable-scroll");
 
       mobMenu.classList.add("open");
       mobMenu.classList.remove("closed");
     } else {
       overlay.classList.remove("overOpen");
       overlay.classList.add("overClosed");
+      body.classList.remove("disable-scroll");
 
       mobMenu.classList.remove("open");
       mobMenu.classList.add("closed");
@@ -108,6 +111,7 @@ const Links = styled.div`
   }
 
   & button {
+    color: hsl(233, 8%, 62%);
     position: relative;
     cursor: pointer;
     transition: color 200ms ease-in-out;
