@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <HeaderWrap id="header">
       <HeaderCont>
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="logo" />
         <Links>
           <button>Home</button>
           <button>About</button>

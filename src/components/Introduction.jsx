@@ -17,7 +17,7 @@ const Introduction = () => {
       </IntroWrap>
       <IntroList>
         <ListItem>
-          <IntroImgs src={IcoOnline} />
+          <IntroImgs src={IcoOnline} alt="online" />
           <ListTitle>Online Banking</ListTitle>
           <ListPara>
             Our modern web and mobile applications allow you to keep track of
@@ -25,7 +25,7 @@ const Introduction = () => {
           </ListPara>
         </ListItem>
         <ListItem>
-          <IntroImgs src={IcoBudget} />
+          <IntroImgs src={IcoBudget} alt="budget" />
           <ListTitle>Simple Budgeting</ListTitle>
           <ListPara>
             See exactly where your money goes each month. Recieve notifications
@@ -33,7 +33,7 @@ const Introduction = () => {
           </ListPara>
         </ListItem>
         <ListItem>
-          <IntroImgs src={IcoOnboard} />
+          <IntroImgs src={IcoOnboard} alt="onboard" />
           <ListTitle>Fast Onboarding</ListTitle>
           <ListPara>
             We don't do branches. Open your account in minutes online and start
@@ -41,7 +41,7 @@ const Introduction = () => {
           </ListPara>
         </ListItem>
         <ListItem>
-          <IntroImgs src={IcoApi} />
+          <IntroImgs src={IcoApi} alt="api" />
           <ListTitle>Open API</ListTitle>
           <ListPara>
             Manage your saving, investments, pension, and much more from one

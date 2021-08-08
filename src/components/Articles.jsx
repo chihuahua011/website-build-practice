@@ -12,7 +12,7 @@ const Articles = () => {
         <ArtTitle>Latest Articles</ArtTitle>
         <ArtList>
           <ArtListWrap>
-            <ArtImg src={Currency} />
+            <ArtImg src={Currency} alt="currency"/>
             <ListBy>By Claire Robinson</ListBy>
             <ListTitle>Recieve money in any currency with no fees</ListTitle>
             <ListPara>
@@ -21,7 +21,7 @@ const Articles = () => {
             </ListPara>
           </ArtListWrap>
           <ArtListWrap>
-            <ArtImg src={Restaurant} />
+            <ArtImg src={Restaurant} alt="restaurant" />
             <ListBy>By Wilson Hutton</ListBy>
             <ListTitle>Treat yourself without worrying about money</ListTitle>
             <ListPara>
@@ -30,7 +30,7 @@ const Articles = () => {
             </ListPara>
           </ArtListWrap>
           <ArtListWrap>
-            <ArtImg src={Plane} />
+            <ArtImg src={Plane} alt="plane" />
             <ListBy>By Wilson Hutton</ListBy>
             <ListTitle>Take your Easybank card wherever you go</ListTitle>
             <ListPara>
@@ -39,7 +39,7 @@ const Articles = () => {
             </ListPara>
           </ArtListWrap>
           <ArtListWrap>
-            <ArtImg src={Confetti} />
+            <ArtImg src={Confetti} alt="confetti" />
             <ListBy>By Claire Robinson</ListBy>
             <ListTitle>Our invite-only Beta accounts are now live!</ListTitle>
             <ListPara>

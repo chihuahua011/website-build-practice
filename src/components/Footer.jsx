@@ -11,13 +11,13 @@ const Footer = () => {
   return (
     <FooterSect>
       <FooterWrap>
-        <LogoIco src={Logo} />
+        <LogoIco src={Logo} alt="logo" />
         <IcoCont>
-          <SocIcons src={Facebook} />
-          <SocIcons src={Youtube} />
-          <SocIcons src={Twitter} />
-          <SocIcons src={Pinterest} />
-          <SocIcons src={Insta} />
+          <SocIcons src={Facebook} alt="facebook" />
+          <SocIcons src={Youtube} alt="youtube" />
+          <SocIcons src={Twitter} alt="twitter" />
+          <SocIcons src={Pinterest} alt="pinterest" />
+          <SocIcons src={Insta} alt="instagram" />
         </IcoCont>
         <FooterCont>
           <FooterLinks>About Us</FooterLinks>
